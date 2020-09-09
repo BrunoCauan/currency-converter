@@ -5,20 +5,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
-    background-color: #f4f4f4;
 }
 
 .content {
     padding: 20px 50px;
     margin: 20px;
     border-radius: 6px;
-    background: #fff;
+    background: #202024;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    color: #FFF;
 }
 
 h1 {
+    font-weight: bold;
     margin: 0;
+}
+
+p {
+    font-size: 14px;
+    margin-bottom: 10px;
 }
 
 .currency-value-section,
@@ -29,16 +34,11 @@ h1 {
 }
 
 .to {
-    font-weight: bold;
     text-align: center;
 }
 
 .input-group {
     margin-top: 0.5em;
-}
-
-.input-group label {
-    display: block;
 }
 
 .input-group input {
@@ -50,12 +50,18 @@ h1 {
     font-size: 1rem;
     line-height: 1.5;
 
-    background-color: #fff;
+    background: #121212;
+    border: 2px solid #121212;
+    color: #fff;
+
     box-sizing: border-box;
     outline: none;
 
-    border: 1px solid #ccc;
     border-radius: 0.25rem;
+}
+
+.input-group input:focus {
+    border-color: #8257e6 !important;
 }
 
 input[type="number"]::-webkit-outer-spin-button,
@@ -84,16 +90,17 @@ input[type="number"] {
     font-size: 1rem;
     line-height: 1.5;
 
+    background-color: #8257e6;
+    border: 2px solid #8257e6;
+    font-weight: bold;
     color: #fff;
-    background-color: #28a745;
-    border-color: #28a745;
     border-radius: 0.25rem;
+    transition: all 0.2s ease;
 }
 
 .cta:hover,
 .cta:focus {
-    background-color: #218838;
-    border-color: #1e7e34;
+    background-color: #9466ff;
 }
 
 .result {
